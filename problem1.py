@@ -9,4 +9,4 @@ n = 0
 for i in new:
 	if i == k:
 		n = n + 1
-print('The Frequncy of {} is :{}'.format(k,n))
+print('The frequncy of {} is :{}'.format(k,n))
