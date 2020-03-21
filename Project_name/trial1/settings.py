@@ -25,6 +25,7 @@ SECRET_KEY = 'o$vnuz2w++yoa$-1(1o&tz8&#1h=oayxfx^qvsi^7ocwfy_of@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
 
 
@@ -54,10 +55,12 @@ ROOT_URLCONF = 'trial1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'Templates')],
         'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
+        'OPTIONS': 
+        {
+            'context_processors': 
+            [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
